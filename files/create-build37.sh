@@ -12,7 +12,4 @@ mkdir ref
 samtools faidx hg19.fa.gz \
     $(seq -f "chr%g" 1 22) chrX chrY \
     | cat - <(cat chrM.fa) \
-    | cgatools fasta2crr --output ref/build37.crr
-
-# You can confirm the file matches the CGI-generated build37.crr file using:
-cgatools listcrr --reference ref/build37.crr > ref/build37.crr.md5
+    | gzip > ref/build37.fa.gz

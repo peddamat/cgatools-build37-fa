@@ -1,1 +1,1 @@
-docker build . -t cgatools-build37-crr:latest
+docker build . -t cgatools-build37-fa:latest
