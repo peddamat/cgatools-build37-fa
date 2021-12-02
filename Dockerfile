@@ -12,6 +12,8 @@ RUN apt update &&  apt install -y \
 
 WORKDIR /root
 
+COPY files/vimrc .vimrc
+
 ################################################################################
 # Install CGAtools
 RUN curl -L -O http://downloads.sourceforge.net/project/cgatools/1.8.0/cgatools-1.8.0.1-linux_binary-x86_64.tar.gz

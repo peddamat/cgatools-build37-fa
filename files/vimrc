@@ -1,0 +1,20 @@
+" References:
+" - https://dougblack.io/words/a-good-vimrc.html
+
+autocmd BufWritePre * :%s/\s\+$//e
+syntax on
+set modeline
+"set list
+set nowrap
+set shiftwidth=4
+set expandtab           " tabs are spaces
+set softtabstop=4       " number of spaces in tab when editing
+set tabstop=4           " number of visual spaces per TAB
+set number              " show line numbers
+set cursorline          " highlight current line
+filetype indent on
+set wildmenu            " visual autocomplete for command menu
+set showmatch           " highlight matching [{()}]
+set incsearch           " search as characters are entered
+set hlsearch            " highlight matches
+nnoremap <leader><space> :nohlsearch<CR>    # turn off search highlight using '\ <space>'
